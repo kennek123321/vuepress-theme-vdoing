@@ -1,11 +1,14 @@
-<p align="center"><a href="https://lizhenzhen.com/" target="_blank" rel="noopener noreferrer"><img width="180" src="https://cdn.jsdelivr.net/gh/lizhenzhen/image_store/blog/20200409124835.png" alt="logo"></a></p>
+<p align="center">
+ <a href="https://xugaoyi.com/" target="_blank" rel="noopener noreferrer"><img width="180" src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200409124835.png" alt="logo">
+ </a>
+</p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/vuepress-theme-vdoing"><img alt="npm" src="https://img.shields.io/npm/v/vuepress-theme-vdoing"></a>
    <a href="https://www.npmjs.com/package/vuepress-theme-vdoing" target="_blank"><img src="https://img.shields.io/npm/dt/vuepress-theme-vdoing" alt="npm" ></a>
-  <a href="https://github.com/kennek123321/vuepress-theme-vdoing/stargazers"><img src="https://img.shields.io/github/stars/lizhenzhen/vuepress-theme-vdoing?logo=ReverbNation&logoColor=rgba(255,255,255,.6)" alt="GitHub stars"></a>
-  <a href="https://github.com/kennek123321/vuepress-theme-vdoing/actions?query=workflow%3ACI"><img src="https://github.com/kennek123321/vuepress-theme-vdoing/workflows/CI/badge.svg" alt="CI"></a>
-  <a href="https://github.com/kennek123321/vuepress-theme-vdoing/actions?query=workflow%3AbaiduPush"><img src="https://github.com/kennek123321/vuepress-theme-vdoing/workflows/baiduPush/badge.svg" alt="baiduPush"></a>
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/stargazers"><img src="https://img.shields.io/github/stars/lizhenzhen/vuepress-theme-vdoing?logo=ReverbNation&logoColor=rgba(255,255,255,.6)" alt="GitHub stars"></a>
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/actions?query=workflow%3ACI"><img src="https://github.com/xugaoyi/vuepress-theme-vdoing/workflows/CI/badge.svg" alt="CI"></a>
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/actions?query=workflow%3AbaiduPush"><img src="https://github.com/xugaoyi/vuepress-theme-vdoing/workflows/baiduPush/badge.svg" alt="baiduPush"></a>
 
 
 
@@ -37,7 +40,7 @@
 
 ```bash
 # clone the project
-git clone https://github.com/kennek123321/vuepress-theme-vdoing.git
+git clone https://github.com/xugaoyi/vuepress-theme-vdoing.git
 
 # enter the project directory
 cd vuepress-theme-vdoing
