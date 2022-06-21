@@ -118,7 +118,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/panda-waving.png', // 导航栏logo
-    repo: 'https://github.com/kennek123321', // 导航栏右侧生成Github链接
+    repo: 'https://github.com/kennek123321/vuepress-theme-vdoing/', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -328,7 +328,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
           title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-          labels: ['Gitalk'], // GitHub issue 的标签
+          labels: ['Gitalk','Comment'], // GitHub issue 的标签
           body:
             '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
         },
