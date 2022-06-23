@@ -305,6 +305,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
+
+      [
+          "vuepress-plugin-live2d",//看板娘
+          {
+              // "modelName": ["z16","koharu","shizuku"],
+              // "mobileShow": false,
+              // "position":"right"
+              "modelName": "shizuku",
+              // "mobileShow": false,
+              "position":"left"
+          }
+      ],
     [
       'vuepress-plugin-zooming', // 放大图片
       {
