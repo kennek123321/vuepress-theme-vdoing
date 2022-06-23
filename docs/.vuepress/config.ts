@@ -314,26 +314,43 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-    [
-      'vuepress-plugin-comment', // 评论
-      {
-        choosen: 'gitalk',
-        options: {
-          clientID: 'c65f44b9c2000d13e974',
-          clientSecret: 'b687ecb2e3727436f7c54028697ecfa18abfc221',
-          repo: 'comment', // GitHub 仓库
-          owner: 'kennek123321', // GitHub仓库所有者
-          admin: ['kennek123321'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
-          pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-          labels: ['Gitalk'], // GitHub issue 的标签
-          body:
-            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-        },
-      },
-    ],
+    // [
+    //   'vuepress-plugin-comment', // 评论
+    //   {
+    //     choosen: 'gitalk',
+    //     options: {
+    //       clientID: 'c65f44b9c2000d13e974',
+    //       clientSecret: 'b687ecb2e3727436f7c54028697ecfa18abfc221',
+    //       repo: 'comment', // GitHub 仓库
+    //       owner: 'kennek123321', // GitHub仓库所有者
+    //       admin: ['kennek123321'], // 对仓库有写权限的人
+    //       // distractionFreeMode: true,
+    //       pagerDirection: 'last', // 'first'正序 | 'last'倒序
+    //       id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+    //       title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+    //       labels: ['Gitalk'], // GitHub issue 的标签
+    //       body:
+    //         '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+    //     },
+    //   },
+    // ],
+
+      [
+          'vuepress-plugin-comment',
+          {
+              choosen: 'valine',
+              // options选项中的所有参数，会传给Valine的配置
+              options: {
+                  // el: '#valine-vuepress-comment',
+                  appId: 'nA6vpfiImbRjDz6E7D8zqpzA-gzGzoHsz',
+                  appKey: '4D30bDTv2Q5JpN5DaiIXMOTy',
+                  avatar:'monsterid', // (''/mp/identicon/monsterid/wavatar/robohash/retro/hide)
+                  placeholder: '说点什么吧',
+                  path:'<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+                  // path: window.location.pathname // 虽然默认就是这个，但是不加会导致不重新加载评论
+              }
+          }
+      ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {
